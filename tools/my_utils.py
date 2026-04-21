@@ -9,7 +9,8 @@ import numpy as np
 import pandas as pd
 
 from tools.i18n.i18n import I18nAuto
-
+# Thay vì để nó tự tìm, mình chỉ tận tay đường dẫn cho nó luôn
+ffmpeg_path = r"D:\Du_An_Mini\TTS_nano\training\models\GPT-SoVITS\ffmpeg.exe"
 i18n = I18nAuto(language=os.environ.get("language", "Auto"))
 
 

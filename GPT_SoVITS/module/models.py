@@ -19,7 +19,9 @@ from module.quantize import ResidualVectorQuantizer
 
 # from text import symbols
 from text import symbols as symbols_v1
-from text import symbols2 as symbols_v2
+from text.symbols import symbols as symbols_v2
+while len(symbols_v2) < 732: 
+    symbols_v2.append(f"pad{len(symbols_v2)}")
 from torch.cuda.amp import autocast
 import contextlib
 import random
@@ -195,7 +197,7 @@ class TextEncoder(nn.Module):
         if self.version == "v1":
             symbols = symbols_v1.symbols
         else:
-            symbols = symbols_v2.symbols
+            symbols = symbols_v2
         self.text_embedding = nn.Embedding(len(symbols), hidden_channels)
 
         self.mrte = MRTE()

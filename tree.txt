@@ -1,0 +1,1613 @@
+Folder PATH listing for volume Data_1
+Volume serial number is A57A-D480
+D:.
+│   .dockerignore
+│   .gitignore
+│   .pre-commit-config.yaml
+│   api.py
+│   api_v2.py
+│   Colab-Inference.ipynb
+│   Colab-WebUI.ipynb
+│   config.py
+│   docker-compose.yaml
+│   Dockerfile
+│   docker_build.sh
+│   extra-req.txt
+│   go-webui.bat
+│   go-webui.ps1
+│   install.ps1
+│   install.sh
+│   LICENSE
+│   README.md
+│   requirements.txt
+│   tree.txt
+│   webui.py
+│   
+├───.github
+│   │   build_windows_packages.ps1
+│   │   
+│   └───workflows
+│           build_windows_packages.yaml
+│           docker-publish.yaml
+│           
+├───Docker
+│       install_wrapper.sh
+│       miniforge_install.sh
+│       
+├───docs
+│   ├───cn
+│   │       Changelog_CN.md
+│   │       README.md
+│   │       
+│   ├───en
+│   │       Changelog_EN.md
+│   │       
+│   ├───ja
+│   │       Changelog_JA.md
+│   │       README.md
+│   │       
+│   ├───ko
+│   │       Changelog_KO.md
+│   │       README.md
+│   │       
+│   └───tr
+│           Changelog_TR.md
+│           README.md
+│           
+├───GPT_SoVITS
+│   │   download.py
+│   │   export_torch_script.py
+│   │   export_torch_script_v3v4.py
+│   │   inference_cli.py
+│   │   inference_gui.py
+│   │   inference_webui.py
+│   │   inference_webui_fast.py
+│   │   onnx_export.py
+│   │   process_ckpt.py
+│   │   s1_train.py
+│   │   s2_train.py
+│   │   s2_train_v3.py
+│   │   s2_train_v3_lora.py
+│   │   stream_v2pro.py
+│   │   sv.py
+│   │   utils.py
+│   │   
+│   ├───AR
+│   │   │   __init__.py
+│   │   │   
+│   │   ├───data
+│   │   │       bucket_sampler.py
+│   │   │       dataset.py
+│   │   │       data_module.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───models
+│   │   │       t2s_lightning_module.py
+│   │   │       t2s_lightning_module_onnx.py
+│   │   │       t2s_model.py
+│   │   │       t2s_model_onnx.py
+│   │   │       utils.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───modules
+│   │   │       activation.py
+│   │   │       activation_onnx.py
+│   │   │       embedding.py
+│   │   │       embedding_onnx.py
+│   │   │       lr_schedulers.py
+│   │   │       optim.py
+│   │   │       patched_mha_with_cache.py
+│   │   │       patched_mha_with_cache_onnx.py
+│   │   │       scaling.py
+│   │   │       transformer.py
+│   │   │       transformer_onnx.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───text_processing
+│   │   │       phonemizer.py
+│   │   │       symbols.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───utils
+│   │           initialize.py
+│   │           io.py
+│   │           __init__.py
+│   │           
+│   ├───BigVGAN
+│   │   │   activations.py
+│   │   │   bigvgan.py
+│   │   │   discriminators.py
+│   │   │   env.py
+│   │   │   inference.py
+│   │   │   inference_e2e.py
+│   │   │   LICENSE
+│   │   │   loss.py
+│   │   │   meldataset.py
+│   │   │   README.md
+│   │   │   requirements.txt
+│   │   │   train.py
+│   │   │   utils0.py
+│   │   │   
+│   │   ├───alias_free_activation
+│   │   │   ├───cuda
+│   │   │   │   │   activation1d.py
+│   │   │   │   │   anti_alias_activation.cpp
+│   │   │   │   │   anti_alias_activation_cuda.cu
+│   │   │   │   │   compat.h
+│   │   │   │   │   load.py
+│   │   │   │   │   type_shim.h
+│   │   │   │   │   __init__.py
+│   │   │   │   │   
+│   │   │   │   └───build
+│   │   │   │           _
+│   │   │   │           
+│   │   │   └───torch
+│   │   │           act.py
+│   │   │           filter.py
+│   │   │           resample.py
+│   │   │           __init__.py
+│   │   │           
+│   │   ├───configs
+│   │   │       bigvgan_22khz_80band.json
+│   │   │       bigvgan_24khz_100band.json
+│   │   │       bigvgan_base_22khz_80band.json
+│   │   │       bigvgan_base_24khz_100band.json
+│   │   │       bigvgan_v2_22khz_80band_256x.json
+│   │   │       bigvgan_v2_22khz_80band_fmax8k_256x.json
+│   │   │       bigvgan_v2_24khz_100band_256x.json
+│   │   │       bigvgan_v2_44khz_128band_256x.json
+│   │   │       bigvgan_v2_44khz_128band_512x.json
+│   │   │       
+│   │   ├───incl_licenses
+│   │   │       LICENSE_1
+│   │   │       LICENSE_2
+│   │   │       LICENSE_3
+│   │   │       LICENSE_4
+│   │   │       LICENSE_5
+│   │   │       LICENSE_6
+│   │   │       LICENSE_7
+│   │   │       LICENSE_8
+│   │   │       
+│   │   ├───nv-modelcard++
+│   │   │       .gitkeep
+│   │   │       bias.md
+│   │   │       explainability.md
+│   │   │       overview.md
+│   │   │       privacy.md
+│   │   │       safety.md
+│   │   │       
+│   │   └───tests
+│   │           test_activation.py
+│   │           test_activation_snake_beta.py
+│   │           test_cuda_vs_torch_model.py
+│   │           
+│   ├───configs
+│   │       .gitignore
+│   │       s1.yaml
+│   │       s1big.yaml
+│   │       s1big2.yaml
+│   │       s1longer-v2.yaml
+│   │       s1longer.yaml
+│   │       s1mq.yaml
+│   │       s2.json
+│   │       s2v2Pro.json
+│   │       s2v2ProPlus.json
+│   │       train.yaml
+│   │       tts_infer.yaml
+│   │       
+│   ├───eres2net
+│   │       ERes2Net.py
+│   │       ERes2NetV2.py
+│   │       ERes2Net_huge.py
+│   │       fusion.py
+│   │       kaldi.py
+│   │       pooling_layers.py
+│   │       
+│   ├───f5_tts
+│   │   └───model
+│   │       │   modules.py
+│   │       │   __init__.py
+│   │       │   
+│   │       └───backbones
+│   │               dit.py
+│   │               mmdit.py
+│   │               README.md
+│   │               unett.py
+│   │               
+│   ├───feature_extractor
+│   │       cnhubert.py
+│   │       whisper_enc.py
+│   │       __init__.py
+│   │       
+│   ├───module
+│   │       attentions.py
+│   │       attentions_onnx.py
+│   │       commons.py
+│   │       core_vq.py
+│   │       data_utils.py
+│   │       ddp_utils.py
+│   │       distrib.py
+│   │       losses.py
+│   │       mel_processing.py
+│   │       models.py
+│   │       models_onnx.py
+│   │       modules.py
+│   │       mrte_model.py
+│   │       quantize.py
+│   │       transforms.py
+│   │       __init__.py
+│   │       
+│   ├───prepare_datasets
+│   │       1-get-text.py
+│   │       2-get-hubert-wav32k.py
+│   │       2-get-sv.py
+│   │       3-get-semantic.py
+│   │       
+│   ├───pretrained_models
+│   │       .gitignore
+│   │       
+│   ├───text
+│   │   │   .gitignore
+│   │   │   cantonese.py
+│   │   │   chinese.py
+│   │   │   chinese2.py
+│   │   │   cleaner.py
+│   │   │   cmudict-fast.rep
+│   │   │   cmudict.rep
+│   │   │   engdict-hot.rep
+│   │   │   engdict_cache.pickle
+│   │   │   english.py
+│   │   │   japanese.py
+│   │   │   korean.py
+│   │   │   namedict_cache.pickle
+│   │   │   opencpop-strict.txt
+│   │   │   symbols.py
+│   │   │   symbols2.py
+│   │   │   tone_sandhi.py
+│   │   │   __init__.py
+│   │   │   
+│   │   ├───en_normalization
+│   │   │       expend.py
+│   │   │       
+│   │   ├───g2pw
+│   │   │       dataset.py
+│   │   │       g2pw.py
+│   │   │       onnx_api.py
+│   │   │       polyphonic-fix.rep
+│   │   │       polyphonic.pickle
+│   │   │       polyphonic.rep
+│   │   │       utils.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───ja_userdic
+│   │   │       userdict.csv
+│   │   │       
+│   │   ├───LangSegmenter
+│   │   │       langsegmenter.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───zh_normalization
+│   │           char_convert.py
+│   │           chronology.py
+│   │           constants.py
+│   │           num.py
+│   │           phonecode.py
+│   │           quantifier.py
+│   │           README.md
+│   │           text_normlization.py
+│   │           __init__.py
+│   │           
+│   └───TTS_infer_pack
+│           TextPreprocessor.py
+│           text_segmentation_method.py
+│           TTS.py
+│           __init__.py
+│           
+└───tools
+    │   assets.py
+    │   audio_sr.py
+    │   cmd-denoise.py
+    │   my_utils.py
+    │   slicer2.py
+    │   slice_audio.py
+    │   subfix_webui.py
+    │   __init__.py
+    │   
+    ├───AP_BWE_main
+    │   │   LICENSE
+    │   │   README.md
+    │   │   
+    │   ├───24kto48k
+    │   │       readme.txt
+    │   │       
+    │   ├───datasets1
+    │   │       dataset.py
+    │   │       __init__.py
+    │   │       
+    │   └───models
+    │           model.py
+    │           __init__.py
+    │           
+    ├───asr
+    │   │   config.py
+    │   │   fasterwhisper_asr.py
+    │   │   funasr_asr.py
+    │   │   
+    │   └───models
+    │           .gitignore
+    │           
+    ├───denoise-model
+    │       .gitignore
+    │       
+    ├───i18n
+    │   │   i18n.py
+    │   │   scan_i18n.py
+    │   │   
+    │   └───locale
+    │           en_US.json
+    │           es_ES.json
+    │           fr_FR.json
+    │           it_IT.json
+    │           ja_JP.json
+    │           ko_KR.json
+    │           pt_BR.json
+    │           ru_RU.json
+    │           tr_TR.json
+    │           zh_CN.json
+    │           zh_HK.json
+    │           zh_SG.json
+    │           zh_TW.json
+    │           
+    └───uvr5
+        │   bsroformer.py
+        │   mdxnet.py
+        │   vr.py
+        │   webui.py
+        │   
+        ├───bs_roformer
+        │       attend.py
+        │       bs_roformer.py
+        │       mel_band_roformer.py
+        │       __init__.py
+        │       
+        ├───lib
+        │   │   name_params.json
+        │   │   utils.py
+        │   │   
+        │   └───lib_v5
+        │       │   dataset.py
+        │       │   layers.py
+        │       │   layers_123812KB.py
+        │       │   layers_123821KB.py
+        │       │   layers_33966KB.py
+        │       │   layers_537227KB.py
+        │       │   layers_537238KB.py
+        │       │   layers_new.py
+        │       │   model_param_init.py
+        │       │   nets.py
+        │       │   nets_123812KB.py
+        │       │   nets_123821KB.py
+        │       │   nets_33966KB.py
+        │       │   nets_537227KB.py
+        │       │   nets_537238KB.py
+        │       │   nets_61968KB.py
+        │       │   nets_new.py
+        │       │   spec_utils.py
+        │       │   
+        │       └───modelparams
+        │               1band_sr16000_hl512.json
+        │               1band_sr32000_hl512.json
+        │               1band_sr33075_hl384.json
+        │               1band_sr44100_hl1024.json
+        │               1band_sr44100_hl256.json
+        │               1band_sr44100_hl512.json
+        │               1band_sr44100_hl512_cut.json
+        │               2band_32000.json
+        │               2band_44100_lofi.json
+        │               2band_48000.json
+        │               3band_44100.json
+        │               3band_44100_mid.json
+        │               3band_44100_msb2.json
+        │               4band_44100.json
+        │               4band_44100_mid.json
+        │               4band_44100_msb.json
+        │               4band_44100_msb2.json
+        │               4band_44100_reverse.json
+        │               4band_44100_sw.json
+        │               4band_v2.json
+        │               4band_v2_sn.json
+        │               4band_v3.json
+        │               ensemble.json
+        │               
+        └───uvr5_weights
+                .gitignore
+                
+Folder PATH listing for volume Data_1
+Volume serial number is A57A-D480
+D:.
+│   .dockerignore
+│   .gitignore
+│   .pre-commit-config.yaml
+│   api.py
+│   api_v2.py
+│   Colab-Inference.ipynb
+│   Colab-WebUI.ipynb
+│   config.py
+│   docker-compose.yaml
+│   Dockerfile
+│   docker_build.sh
+│   extra-req.txt
+│   go-webui.bat
+│   go-webui.ps1
+│   inference_gui.py
+│   inference_webui.py
+│   install.ps1
+│   install.sh
+│   LICENSE
+│   my_utils.py
+│   onnx_export.py
+│   process_ckpt.py
+│   README.md
+│   requirements.txt
+│   s1_train.py
+│   s2_train.py
+│   tree.txt
+│   utils.py
+│   webui.py
+│   
+├───.github
+│   │   build_windows_packages.ps1
+│   │   
+│   └───workflows
+│           build_windows_packages.yaml
+│           docker-publish.yaml
+│           
+├───AR
+│   │   __init__.py
+│   │   
+│   ├───data
+│   │       bucket_sampler.py
+│   │       dataset.py
+│   │       data_module.py
+│   │       __init__.py
+│   │       
+│   ├───models
+│   │       t2s_lightning_module.py
+│   │       t2s_lightning_module_onnx.py
+│   │       t2s_model.py
+│   │       t2s_model_onnx.py
+│   │       utils.py
+│   │       __init__.py
+│   │       
+│   ├───modules
+│   │       activation.py
+│   │       activation_onnx.py
+│   │       embedding.py
+│   │       embedding_onnx.py
+│   │       lr_schedulers.py
+│   │       optim.py
+│   │       patched_mha_with_cache.py
+│   │       patched_mha_with_cache_onnx.py
+│   │       scaling.py
+│   │       transformer.py
+│   │       transformer_onnx.py
+│   │       __init__.py
+│   │       
+│   ├───text_processing
+│   │       phonemizer.py
+│   │       symbols.py
+│   │       __init__.py
+│   │       
+│   └───utils
+│           initialize.py
+│           io.py
+│           __init__.py
+│           
+├───configs
+│       s1.yaml
+│       s1big.yaml
+│       s1big2.yaml
+│       s1longer.yaml
+│       s1mq.yaml
+│       s2.json
+│       train.yaml
+│       
+├───Docker
+│       install_wrapper.sh
+│       miniforge_install.sh
+│       
+├───docs
+│   ├───cn
+│   │       Changelog_CN.md
+│   │       README.md
+│   │       
+│   ├───en
+│   │       Changelog_EN.md
+│   │       
+│   ├───ja
+│   │       Changelog_JA.md
+│   │       README.md
+│   │       
+│   ├───ko
+│   │       Changelog_KO.md
+│   │       README.md
+│   │       
+│   └───tr
+│           Changelog_TR.md
+│           README.md
+│           
+├───feature_extractor
+│       cnhubert.py
+│       whisper_enc.py
+│       __init__.py
+│       
+├───GPT_SoVITS
+│   │   download.py
+│   │   export_torch_script.py
+│   │   export_torch_script_v3v4.py
+│   │   inference_cli.py
+│   │   inference_gui.py
+│   │   inference_webui.py
+│   │   inference_webui_fast.py
+│   │   onnx_export.py
+│   │   process_ckpt.py
+│   │   s1_train.py
+│   │   s2_train.py
+│   │   s2_train_v3.py
+│   │   s2_train_v3_lora.py
+│   │   stream_v2pro.py
+│   │   sv.py
+│   │   utils.py
+│   │   
+│   ├───AR
+│   │   │   __init__.py
+│   │   │   
+│   │   ├───data
+│   │   │       bucket_sampler.py
+│   │   │       dataset.py
+│   │   │       data_module.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───models
+│   │   │       t2s_lightning_module.py
+│   │   │       t2s_lightning_module_onnx.py
+│   │   │       t2s_model.py
+│   │   │       t2s_model_onnx.py
+│   │   │       utils.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───modules
+│   │   │       activation.py
+│   │   │       activation_onnx.py
+│   │   │       embedding.py
+│   │   │       embedding_onnx.py
+│   │   │       lr_schedulers.py
+│   │   │       optim.py
+│   │   │       patched_mha_with_cache.py
+│   │   │       patched_mha_with_cache_onnx.py
+│   │   │       scaling.py
+│   │   │       transformer.py
+│   │   │       transformer_onnx.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───text_processing
+│   │   │       phonemizer.py
+│   │   │       symbols.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───utils
+│   │           initialize.py
+│   │           io.py
+│   │           __init__.py
+│   │           
+│   ├───BigVGAN
+│   │   │   activations.py
+│   │   │   bigvgan.py
+│   │   │   discriminators.py
+│   │   │   env.py
+│   │   │   inference.py
+│   │   │   inference_e2e.py
+│   │   │   LICENSE
+│   │   │   loss.py
+│   │   │   meldataset.py
+│   │   │   README.md
+│   │   │   requirements.txt
+│   │   │   train.py
+│   │   │   utils0.py
+│   │   │   
+│   │   ├───alias_free_activation
+│   │   │   ├───cuda
+│   │   │   │   │   activation1d.py
+│   │   │   │   │   anti_alias_activation.cpp
+│   │   │   │   │   anti_alias_activation_cuda.cu
+│   │   │   │   │   compat.h
+│   │   │   │   │   load.py
+│   │   │   │   │   type_shim.h
+│   │   │   │   │   __init__.py
+│   │   │   │   │   
+│   │   │   │   └───build
+│   │   │   │           _
+│   │   │   │           
+│   │   │   └───torch
+│   │   │           act.py
+│   │   │           filter.py
+│   │   │           resample.py
+│   │   │           __init__.py
+│   │   │           
+│   │   ├───configs
+│   │   │       bigvgan_22khz_80band.json
+│   │   │       bigvgan_24khz_100band.json
+│   │   │       bigvgan_base_22khz_80band.json
+│   │   │       bigvgan_base_24khz_100band.json
+│   │   │       bigvgan_v2_22khz_80band_256x.json
+│   │   │       bigvgan_v2_22khz_80band_fmax8k_256x.json
+│   │   │       bigvgan_v2_24khz_100band_256x.json
+│   │   │       bigvgan_v2_44khz_128band_256x.json
+│   │   │       bigvgan_v2_44khz_128band_512x.json
+│   │   │       
+│   │   ├───incl_licenses
+│   │   │       LICENSE_1
+│   │   │       LICENSE_2
+│   │   │       LICENSE_3
+│   │   │       LICENSE_4
+│   │   │       LICENSE_5
+│   │   │       LICENSE_6
+│   │   │       LICENSE_7
+│   │   │       LICENSE_8
+│   │   │       
+│   │   ├───nv-modelcard++
+│   │   │       .gitkeep
+│   │   │       bias.md
+│   │   │       explainability.md
+│   │   │       overview.md
+│   │   │       privacy.md
+│   │   │       safety.md
+│   │   │       
+│   │   └───tests
+│   │           test_activation.py
+│   │           test_activation_snake_beta.py
+│   │           test_cuda_vs_torch_model.py
+│   │           
+│   ├───configs
+│   │       .gitignore
+│   │       s1.yaml
+│   │       s1big.yaml
+│   │       s1big2.yaml
+│   │       s1longer-v2.yaml
+│   │       s1longer.yaml
+│   │       s1mq.yaml
+│   │       s2.json
+│   │       s2v2Pro.json
+│   │       s2v2ProPlus.json
+│   │       train.yaml
+│   │       tts_infer.yaml
+│   │       
+│   ├───eres2net
+│   │       ERes2Net.py
+│   │       ERes2NetV2.py
+│   │       ERes2Net_huge.py
+│   │       fusion.py
+│   │       kaldi.py
+│   │       pooling_layers.py
+│   │       
+│   ├───f5_tts
+│   │   └───model
+│   │       │   modules.py
+│   │       │   __init__.py
+│   │       │   
+│   │       └───backbones
+│   │               dit.py
+│   │               mmdit.py
+│   │               README.md
+│   │               unett.py
+│   │               
+│   ├───feature_extractor
+│   │       cnhubert.py
+│   │       whisper_enc.py
+│   │       __init__.py
+│   │       
+│   ├───module
+│   │       attentions.py
+│   │       attentions_onnx.py
+│   │       commons.py
+│   │       core_vq.py
+│   │       data_utils.py
+│   │       ddp_utils.py
+│   │       distrib.py
+│   │       losses.py
+│   │       mel_processing.py
+│   │       models.py
+│   │       models_onnx.py
+│   │       modules.py
+│   │       mrte_model.py
+│   │       quantize.py
+│   │       transforms.py
+│   │       __init__.py
+│   │       
+│   ├───prepare_datasets
+│   │       1-get-text.py
+│   │       2-get-hubert-wav32k.py
+│   │       2-get-sv.py
+│   │       3-get-semantic.py
+│   │       
+│   ├───pretrained_models
+│   │       .gitignore
+│   │       
+│   ├───text
+│   │   │   .gitignore
+│   │   │   cantonese.py
+│   │   │   chinese.py
+│   │   │   chinese2.py
+│   │   │   cleaner.py
+│   │   │   cmudict-fast.rep
+│   │   │   cmudict.rep
+│   │   │   engdict-hot.rep
+│   │   │   engdict_cache.pickle
+│   │   │   english.py
+│   │   │   japanese.py
+│   │   │   korean.py
+│   │   │   namedict_cache.pickle
+│   │   │   opencpop-strict.txt
+│   │   │   symbols.py
+│   │   │   symbols2.py
+│   │   │   tone_sandhi.py
+│   │   │   __init__.py
+│   │   │   
+│   │   ├───en_normalization
+│   │   │       expend.py
+│   │   │       
+│   │   ├───g2pw
+│   │   │   │   dataset.py
+│   │   │   │   g2pw.py
+│   │   │   │   onnx_api.py
+│   │   │   │   polyphonic-fix.rep
+│   │   │   │   polyphonic.pickle
+│   │   │   │   polyphonic.rep
+│   │   │   │   utils.py
+│   │   │   │   __init__.py
+│   │   │   │   
+│   │   │   └───__pycache__
+│   │   │           g2pw.cpython-312.pyc
+│   │   │           onnx_api.cpython-312.pyc
+│   │   │           __init__.cpython-312.pyc
+│   │   │           
+│   │   ├───ja_userdic
+│   │   │       userdict.csv
+│   │   │       
+│   │   ├───LangSegmenter
+│   │   │       langsegmenter.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───zh_normalization
+│   │   │       char_convert.py
+│   │   │       chronology.py
+│   │   │       constants.py
+│   │   │       num.py
+│   │   │       phonecode.py
+│   │   │       quantifier.py
+│   │   │       README.md
+│   │   │       text_normlization.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───__pycache__
+│   │           cleaner.cpython-312.pyc
+│   │           symbols.cpython-312.pyc
+│   │           symbols2.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   └───TTS_infer_pack
+│           TextPreprocessor.py
+│           text_segmentation_method.py
+│           TTS.py
+│           __init__.py
+│           
+├───GPT_weights
+├───GPT_weights_v2
+├───GPT_weights_v2Pro
+├───GPT_weights_v2ProPlus
+├───GPT_weights_v3
+├───GPT_weights_v4
+├───prepare_datasets
+│       1-get-text.py
+│       2-get-hubert-wav32k.py
+│       3-get-semantic.py
+│       
+├───pretrained_models
+│   │   .gitignore
+│   │   README.md
+│   │   s1bert25hz-2kh-longer-epoch=68e-step=50232.ckpt
+│   │   s2D488k.pth
+│   │   s2G488k.pth
+│   │   
+│   ├───chinese-hubert-base
+│   │       config.json
+│   │       preprocessor_config.json
+│   │       pytorch_model.bin
+│   │       
+│   ├───chinese-roberta-wwm-ext-large
+│   │       config.json
+│   │       pytorch_model.bin
+│   │       tokenizer.json
+│   │       
+│   ├───module
+│   │       attentions.py
+│   │       attentions_onnx.py
+│   │       commons.py
+│   │       core_vq.py
+│   │       data_utils.py
+│   │       losses.py
+│   │       mel_processing.py
+│   │       models.py
+│   │       models_onnx.py
+│   │       modules.py
+│   │       mrte_model.py
+│   │       quantize.py
+│   │       transforms.py
+│   │       __init__.py
+│   │       
+│   └───v2Pro
+├───SoVITS_weights
+├───SoVITS_weights_v2
+├───SoVITS_weights_v2Pro
+├───SoVITS_weights_v2ProPlus
+├───SoVITS_weights_v3
+├───SoVITS_weights_v4
+├───TEMP
+├───text
+│   │   chinese.py
+│   │   cleaner.py
+│   │   cmudict-fast.rep
+│   │   cmudict.rep
+│   │   engdict-hot.rep
+│   │   engdict_cache.pickle
+│   │   english.py
+│   │   japanese.py
+│   │   namedict_cache.pickle
+│   │   opencpop-strict.txt
+│   │   symbols.py
+│   │   tone_sandhi.py
+│   │   __init__.py
+│   │   
+│   └───zh_normalization
+│           char_convert.py
+│           chronology.py
+│           constants.py
+│           num.py
+│           phonecode.py
+│           quantifier.py
+│           README.md
+│           text_normlization.py
+│           __init__.py
+│           
+├───tools
+│   │   assets.py
+│   │   audio_sr.py
+│   │   cmd-denoise.py
+│   │   my_utils.py
+│   │   slicer2.py
+│   │   slice_audio.py
+│   │   subfix_webui.py
+│   │   __init__.py
+│   │   
+│   ├───AP_BWE_main
+│   │   │   LICENSE
+│   │   │   README.md
+│   │   │   
+│   │   ├───24kto48k
+│   │   │       readme.txt
+│   │   │       
+│   │   ├───datasets1
+│   │   │       dataset.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───models
+│   │           model.py
+│   │           __init__.py
+│   │           
+│   ├───asr
+│   │   │   config.py
+│   │   │   fasterwhisper_asr.py
+│   │   │   funasr_asr.py
+│   │   │   
+│   │   ├───models
+│   │   │       .gitignore
+│   │   │       
+│   │   └───__pycache__
+│   │           config.cpython-312.pyc
+│   │           
+│   ├───denoise-model
+│   │       .gitignore
+│   │       
+│   ├───i18n
+│   │   │   i18n.py
+│   │   │   scan_i18n.py
+│   │   │   
+│   │   ├───locale
+│   │   │       en_US.json
+│   │   │       es_ES.json
+│   │   │       fr_FR.json
+│   │   │       it_IT.json
+│   │   │       ja_JP.json
+│   │   │       ko_KR.json
+│   │   │       pt_BR.json
+│   │   │       ru_RU.json
+│   │   │       tr_TR.json
+│   │   │       zh_CN.json
+│   │   │       zh_HK.json
+│   │   │       zh_SG.json
+│   │   │       zh_TW.json
+│   │   │       
+│   │   └───__pycache__
+│   │           i18n.cpython-312.pyc
+│   │           
+│   ├───uvr5
+│   │   │   bsroformer.py
+│   │   │   mdxnet.py
+│   │   │   vr.py
+│   │   │   webui.py
+│   │   │   
+│   │   ├───bs_roformer
+│   │   │       attend.py
+│   │   │       bs_roformer.py
+│   │   │       mel_band_roformer.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───lib
+│   │   │   │   name_params.json
+│   │   │   │   utils.py
+│   │   │   │   
+│   │   │   └───lib_v5
+│   │   │       │   dataset.py
+│   │   │       │   layers.py
+│   │   │       │   layers_123812KB.py
+│   │   │       │   layers_123821KB.py
+│   │   │       │   layers_33966KB.py
+│   │   │       │   layers_537227KB.py
+│   │   │       │   layers_537238KB.py
+│   │   │       │   layers_new.py
+│   │   │       │   model_param_init.py
+│   │   │       │   nets.py
+│   │   │       │   nets_123812KB.py
+│   │   │       │   nets_123821KB.py
+│   │   │       │   nets_33966KB.py
+│   │   │       │   nets_537227KB.py
+│   │   │       │   nets_537238KB.py
+│   │   │       │   nets_61968KB.py
+│   │   │       │   nets_new.py
+│   │   │       │   spec_utils.py
+│   │   │       │   
+│   │   │       └───modelparams
+│   │   │               1band_sr16000_hl512.json
+│   │   │               1band_sr32000_hl512.json
+│   │   │               1band_sr33075_hl384.json
+│   │   │               1band_sr44100_hl1024.json
+│   │   │               1band_sr44100_hl256.json
+│   │   │               1band_sr44100_hl512.json
+│   │   │               1band_sr44100_hl512_cut.json
+│   │   │               2band_32000.json
+│   │   │               2band_44100_lofi.json
+│   │   │               2band_48000.json
+│   │   │               3band_44100.json
+│   │   │               3band_44100_mid.json
+│   │   │               3band_44100_msb2.json
+│   │   │               4band_44100.json
+│   │   │               4band_44100_mid.json
+│   │   │               4band_44100_msb.json
+│   │   │               4band_44100_msb2.json
+│   │   │               4band_44100_reverse.json
+│   │   │               4band_44100_sw.json
+│   │   │               4band_v2.json
+│   │   │               4band_v2_sn.json
+│   │   │               4band_v3.json
+│   │   │               ensemble.json
+│   │   │               
+│   │   └───uvr5_weights
+│   │           .gitignore
+│   │           
+│   └───__pycache__
+│           assets.cpython-312.pyc
+│           my_utils.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│           
+└───__pycache__
+        config.cpython-312.pyc
+        
+Folder PATH listing for volume Data_1
+Volume serial number is A57A-D480
+D:.
+│   .dockerignore
+│   .gitignore
+│   .pre-commit-config.yaml
+│   api.py
+│   api_v2.py
+│   Colab-Inference.ipynb
+│   Colab-WebUI.ipynb
+│   config.py
+│   docker-compose.yaml
+│   Dockerfile
+│   docker_build.sh
+│   extra-req.txt
+│   go-webui.bat
+│   go-webui.ps1
+│   inference_gui.py
+│   inference_webui.py
+│   install.ps1
+│   install.sh
+│   LICENSE
+│   my_utils.py
+│   onnx_export.py
+│   process_ckpt.py
+│   README.md
+│   requirements.txt
+│   s1_train.py
+│   s2_train.py
+│   tree.txt
+│   utils.py
+│   webui.py
+│   
+├───.github
+│   │   build_windows_packages.ps1
+│   │   
+│   └───workflows
+│           build_windows_packages.yaml
+│           docker-publish.yaml
+│           
+├───AR
+│   │   __init__.py
+│   │   
+│   ├───data
+│   │       bucket_sampler.py
+│   │       dataset.py
+│   │       data_module.py
+│   │       __init__.py
+│   │       
+│   ├───models
+│   │       t2s_lightning_module.py
+│   │       t2s_lightning_module_onnx.py
+│   │       t2s_model.py
+│   │       t2s_model_onnx.py
+│   │       utils.py
+│   │       __init__.py
+│   │       
+│   ├───modules
+│   │       activation.py
+│   │       activation_onnx.py
+│   │       embedding.py
+│   │       embedding_onnx.py
+│   │       lr_schedulers.py
+│   │       optim.py
+│   │       patched_mha_with_cache.py
+│   │       patched_mha_with_cache_onnx.py
+│   │       scaling.py
+│   │       transformer.py
+│   │       transformer_onnx.py
+│   │       __init__.py
+│   │       
+│   ├───text_processing
+│   │       phonemizer.py
+│   │       symbols.py
+│   │       __init__.py
+│   │       
+│   └───utils
+│           initialize.py
+│           io.py
+│           __init__.py
+│           
+├───configs
+│       s1.yaml
+│       s1big.yaml
+│       s1big2.yaml
+│       s1longer.yaml
+│       s1mq.yaml
+│       s2.json
+│       train.yaml
+│       
+├───Docker
+│       install_wrapper.sh
+│       miniforge_install.sh
+│       
+├───docs
+│   ├───cn
+│   │       Changelog_CN.md
+│   │       README.md
+│   │       
+│   ├───en
+│   │       Changelog_EN.md
+│   │       
+│   ├───ja
+│   │       Changelog_JA.md
+│   │       README.md
+│   │       
+│   ├───ko
+│   │       Changelog_KO.md
+│   │       README.md
+│   │       
+│   └───tr
+│           Changelog_TR.md
+│           README.md
+│           
+├───feature_extractor
+│       cnhubert.py
+│       whisper_enc.py
+│       __init__.py
+│       
+├───GPT_SoVITS
+│   │   download.py
+│   │   export_torch_script.py
+│   │   export_torch_script_v3v4.py
+│   │   inference_cli.py
+│   │   inference_gui.py
+│   │   inference_webui.py
+│   │   inference_webui_fast.py
+│   │   onnx_export.py
+│   │   process_ckpt.py
+│   │   s1_train.py
+│   │   s2_train.py
+│   │   s2_train_v3.py
+│   │   s2_train_v3_lora.py
+│   │   stream_v2pro.py
+│   │   sv.py
+│   │   utils.py
+│   │   
+│   ├───AR
+│   │   │   __init__.py
+│   │   │   
+│   │   ├───data
+│   │   │       bucket_sampler.py
+│   │   │       dataset.py
+│   │   │       data_module.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───models
+│   │   │       t2s_lightning_module.py
+│   │   │       t2s_lightning_module_onnx.py
+│   │   │       t2s_model.py
+│   │   │       t2s_model_onnx.py
+│   │   │       utils.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───modules
+│   │   │       activation.py
+│   │   │       activation_onnx.py
+│   │   │       embedding.py
+│   │   │       embedding_onnx.py
+│   │   │       lr_schedulers.py
+│   │   │       optim.py
+│   │   │       patched_mha_with_cache.py
+│   │   │       patched_mha_with_cache_onnx.py
+│   │   │       scaling.py
+│   │   │       transformer.py
+│   │   │       transformer_onnx.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───text_processing
+│   │   │       phonemizer.py
+│   │   │       symbols.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───utils
+│   │           initialize.py
+│   │           io.py
+│   │           __init__.py
+│   │           
+│   ├───BigVGAN
+│   │   │   activations.py
+│   │   │   bigvgan.py
+│   │   │   discriminators.py
+│   │   │   env.py
+│   │   │   inference.py
+│   │   │   inference_e2e.py
+│   │   │   LICENSE
+│   │   │   loss.py
+│   │   │   meldataset.py
+│   │   │   README.md
+│   │   │   requirements.txt
+│   │   │   train.py
+│   │   │   utils0.py
+│   │   │   
+│   │   ├───alias_free_activation
+│   │   │   ├───cuda
+│   │   │   │   │   activation1d.py
+│   │   │   │   │   anti_alias_activation.cpp
+│   │   │   │   │   anti_alias_activation_cuda.cu
+│   │   │   │   │   compat.h
+│   │   │   │   │   load.py
+│   │   │   │   │   type_shim.h
+│   │   │   │   │   __init__.py
+│   │   │   │   │   
+│   │   │   │   └───build
+│   │   │   │           _
+│   │   │   │           
+│   │   │   └───torch
+│   │   │           act.py
+│   │   │           filter.py
+│   │   │           resample.py
+│   │   │           __init__.py
+│   │   │           
+│   │   ├───configs
+│   │   │       bigvgan_22khz_80band.json
+│   │   │       bigvgan_24khz_100band.json
+│   │   │       bigvgan_base_22khz_80band.json
+│   │   │       bigvgan_base_24khz_100band.json
+│   │   │       bigvgan_v2_22khz_80band_256x.json
+│   │   │       bigvgan_v2_22khz_80band_fmax8k_256x.json
+│   │   │       bigvgan_v2_24khz_100band_256x.json
+│   │   │       bigvgan_v2_44khz_128band_256x.json
+│   │   │       bigvgan_v2_44khz_128band_512x.json
+│   │   │       
+│   │   ├───incl_licenses
+│   │   │       LICENSE_1
+│   │   │       LICENSE_2
+│   │   │       LICENSE_3
+│   │   │       LICENSE_4
+│   │   │       LICENSE_5
+│   │   │       LICENSE_6
+│   │   │       LICENSE_7
+│   │   │       LICENSE_8
+│   │   │       
+│   │   ├───nv-modelcard++
+│   │   │       .gitkeep
+│   │   │       bias.md
+│   │   │       explainability.md
+│   │   │       overview.md
+│   │   │       privacy.md
+│   │   │       safety.md
+│   │   │       
+│   │   └───tests
+│   │           test_activation.py
+│   │           test_activation_snake_beta.py
+│   │           test_cuda_vs_torch_model.py
+│   │           
+│   ├───configs
+│   │       .gitignore
+│   │       s1.yaml
+│   │       s1big.yaml
+│   │       s1big2.yaml
+│   │       s1longer-v2.yaml
+│   │       s1longer.yaml
+│   │       s1mq.yaml
+│   │       s2.json
+│   │       s2v2Pro.json
+│   │       s2v2ProPlus.json
+│   │       train.yaml
+│   │       tts_infer.yaml
+│   │       
+│   ├───eres2net
+│   │       ERes2Net.py
+│   │       ERes2NetV2.py
+│   │       ERes2Net_huge.py
+│   │       fusion.py
+│   │       kaldi.py
+│   │       pooling_layers.py
+│   │       
+│   ├───f5_tts
+│   │   └───model
+│   │       │   modules.py
+│   │       │   __init__.py
+│   │       │   
+│   │       └───backbones
+│   │               dit.py
+│   │               mmdit.py
+│   │               README.md
+│   │               unett.py
+│   │               
+│   ├───feature_extractor
+│   │       cnhubert.py
+│   │       whisper_enc.py
+│   │       __init__.py
+│   │       
+│   ├───module
+│   │       attentions.py
+│   │       attentions_onnx.py
+│   │       commons.py
+│   │       core_vq.py
+│   │       data_utils.py
+│   │       ddp_utils.py
+│   │       distrib.py
+│   │       losses.py
+│   │       mel_processing.py
+│   │       models.py
+│   │       models_onnx.py
+│   │       modules.py
+│   │       mrte_model.py
+│   │       quantize.py
+│   │       transforms.py
+│   │       __init__.py
+│   │       
+│   ├───prepare_datasets
+│   │       1-get-text.py
+│   │       2-get-hubert-wav32k.py
+│   │       2-get-sv.py
+│   │       3-get-semantic.py
+│   │       
+│   ├───pretrained_models
+│   │   │   .gitignore
+│   │   │   README.md
+│   │   │   s1v3.ckpt
+│   │   │   s2D488k.pth
+│   │   │   s2G488k.pth
+│   │   │   tree.txt
+│   │   │   
+│   │   ├───chinese-hubert-base
+│   │   │       config.json
+│   │   │       preprocessor_config.json
+│   │   │       pytorch_model.bin
+│   │   │       
+│   │   ├───chinese-roberta-wwm-ext-large
+│   │   │       config.json
+│   │   │       pytorch_model.bin
+│   │   │       tokenizer.json
+│   │   │       
+│   │   ├───module
+│   │   │       attentions.py
+│   │   │       attentions_onnx.py
+│   │   │       commons.py
+│   │   │       core_vq.py
+│   │   │       data_utils.py
+│   │   │       losses.py
+│   │   │       mel_processing.py
+│   │   │       models.py
+│   │   │       models_onnx.py
+│   │   │       modules.py
+│   │   │       mrte_model.py
+│   │   │       quantize.py
+│   │   │       transforms.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───v2Pro
+│   │           s2Dv2Pro.pth
+│   │           s2Dv2ProPlus.pth
+│   │           s2Gv2Pro.pth
+│   │           s2Gv2ProPlus.pth
+│   │           
+│   ├───text
+│   │   │   .gitignore
+│   │   │   cantonese.py
+│   │   │   chinese.py
+│   │   │   chinese2.py
+│   │   │   cleaner.py
+│   │   │   cmudict-fast.rep
+│   │   │   cmudict.rep
+│   │   │   engdict-hot.rep
+│   │   │   engdict_cache.pickle
+│   │   │   english.py
+│   │   │   japanese.py
+│   │   │   korean.py
+│   │   │   namedict_cache.pickle
+│   │   │   opencpop-strict.txt
+│   │   │   symbols.py
+│   │   │   symbols2.py
+│   │   │   tone_sandhi.py
+│   │   │   __init__.py
+│   │   │   
+│   │   ├───en_normalization
+│   │   │       expend.py
+│   │   │       
+│   │   ├───g2pw
+│   │   │   │   dataset.py
+│   │   │   │   g2pw.py
+│   │   │   │   onnx_api.py
+│   │   │   │   polyphonic-fix.rep
+│   │   │   │   polyphonic.pickle
+│   │   │   │   polyphonic.rep
+│   │   │   │   utils.py
+│   │   │   │   __init__.py
+│   │   │   │   
+│   │   │   └───__pycache__
+│   │   │           g2pw.cpython-312.pyc
+│   │   │           onnx_api.cpython-312.pyc
+│   │   │           __init__.cpython-312.pyc
+│   │   │           
+│   │   ├───ja_userdic
+│   │   │       userdict.csv
+│   │   │       
+│   │   ├───LangSegmenter
+│   │   │       langsegmenter.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───zh_normalization
+│   │   │       char_convert.py
+│   │   │       chronology.py
+│   │   │       constants.py
+│   │   │       num.py
+│   │   │       phonecode.py
+│   │   │       quantifier.py
+│   │   │       README.md
+│   │   │       text_normlization.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───__pycache__
+│   │           cleaner.cpython-312.pyc
+│   │           symbols.cpython-312.pyc
+│   │           symbols2.cpython-312.pyc
+│   │           __init__.cpython-312.pyc
+│   │           
+│   └───TTS_infer_pack
+│           TextPreprocessor.py
+│           text_segmentation_method.py
+│           TTS.py
+│           __init__.py
+│           
+├───GPT_weights
+├───GPT_weights_v2
+├───GPT_weights_v2Pro
+├───GPT_weights_v2ProPlus
+├───GPT_weights_v3
+├───GPT_weights_v4
+├───prepare_datasets
+│       1-get-text.py
+│       2-get-hubert-wav32k.py
+│       3-get-semantic.py
+│       
+├───SoVITS_weights
+├───SoVITS_weights_v2
+├───SoVITS_weights_v2Pro
+├───SoVITS_weights_v2ProPlus
+├───SoVITS_weights_v3
+├───SoVITS_weights_v4
+├───TEMP
+│   └───gradio
+│       └───vibe_edit_history
+├───text
+│   │   chinese.py
+│   │   cleaner.py
+│   │   cmudict-fast.rep
+│   │   cmudict.rep
+│   │   engdict-hot.rep
+│   │   engdict_cache.pickle
+│   │   english.py
+│   │   japanese.py
+│   │   namedict_cache.pickle
+│   │   opencpop-strict.txt
+│   │   symbols.py
+│   │   tone_sandhi.py
+│   │   __init__.py
+│   │   
+│   ├───zh_normalization
+│   │       char_convert.py
+│   │       chronology.py
+│   │       constants.py
+│   │       num.py
+│   │       phonecode.py
+│   │       quantifier.py
+│   │       README.md
+│   │       text_normlization.py
+│   │       __init__.py
+│   │       
+│   └───__pycache__
+│           symbols.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│           
+├───tools
+│   │   assets.py
+│   │   audio_sr.py
+│   │   cmd-denoise.py
+│   │   my_utils.py
+│   │   slicer2.py
+│   │   slice_audio.py
+│   │   subfix_webui.py
+│   │   __init__.py
+│   │   
+│   ├───AP_BWE_main
+│   │   │   LICENSE
+│   │   │   README.md
+│   │   │   
+│   │   ├───24kto48k
+│   │   │       readme.txt
+│   │   │       
+│   │   ├───datasets1
+│   │   │       dataset.py
+│   │   │       __init__.py
+│   │   │       
+│   │   └───models
+│   │           model.py
+│   │           __init__.py
+│   │           
+│   ├───asr
+│   │   │   config.py
+│   │   │   fasterwhisper_asr.py
+│   │   │   funasr_asr.py
+│   │   │   
+│   │   ├───models
+│   │   │       .gitignore
+│   │   │       
+│   │   └───__pycache__
+│   │           config.cpython-312.pyc
+│   │           
+│   ├───denoise-model
+│   │       .gitignore
+│   │       
+│   ├───i18n
+│   │   │   i18n.py
+│   │   │   scan_i18n.py
+│   │   │   
+│   │   ├───locale
+│   │   │       en_US.json
+│   │   │       es_ES.json
+│   │   │       fr_FR.json
+│   │   │       it_IT.json
+│   │   │       ja_JP.json
+│   │   │       ko_KR.json
+│   │   │       pt_BR.json
+│   │   │       ru_RU.json
+│   │   │       tr_TR.json
+│   │   │       zh_CN.json
+│   │   │       zh_HK.json
+│   │   │       zh_SG.json
+│   │   │       zh_TW.json
+│   │   │       
+│   │   └───__pycache__
+│   │           i18n.cpython-312.pyc
+│   │           
+│   ├───uvr5
+│   │   │   bsroformer.py
+│   │   │   mdxnet.py
+│   │   │   vr.py
+│   │   │   webui.py
+│   │   │   
+│   │   ├───bs_roformer
+│   │   │       attend.py
+│   │   │       bs_roformer.py
+│   │   │       mel_band_roformer.py
+│   │   │       __init__.py
+│   │   │       
+│   │   ├───lib
+│   │   │   │   name_params.json
+│   │   │   │   utils.py
+│   │   │   │   
+│   │   │   └───lib_v5
+│   │   │       │   dataset.py
+│   │   │       │   layers.py
+│   │   │       │   layers_123812KB.py
+│   │   │       │   layers_123821KB.py
+│   │   │       │   layers_33966KB.py
+│   │   │       │   layers_537227KB.py
+│   │   │       │   layers_537238KB.py
+│   │   │       │   layers_new.py
+│   │   │       │   model_param_init.py
+│   │   │       │   nets.py
+│   │   │       │   nets_123812KB.py
+│   │   │       │   nets_123821KB.py
+│   │   │       │   nets_33966KB.py
+│   │   │       │   nets_537227KB.py
+│   │   │       │   nets_537238KB.py
+│   │   │       │   nets_61968KB.py
+│   │   │       │   nets_new.py
+│   │   │       │   spec_utils.py
+│   │   │       │   
+│   │   │       └───modelparams
+│   │   │               1band_sr16000_hl512.json
+│   │   │               1band_sr32000_hl512.json
+│   │   │               1band_sr33075_hl384.json
+│   │   │               1band_sr44100_hl1024.json
+│   │   │               1band_sr44100_hl256.json
+│   │   │               1band_sr44100_hl512.json
+│   │   │               1band_sr44100_hl512_cut.json
+│   │   │               2band_32000.json
+│   │   │               2band_44100_lofi.json
+│   │   │               2band_48000.json
+│   │   │               3band_44100.json
+│   │   │               3band_44100_mid.json
+│   │   │               3band_44100_msb2.json
+│   │   │               4band_44100.json
+│   │   │               4band_44100_mid.json
+│   │   │               4band_44100_msb.json
+│   │   │               4band_44100_msb2.json
+│   │   │               4band_44100_reverse.json
+│   │   │               4band_44100_sw.json
+│   │   │               4band_v2.json
+│   │   │               4band_v2_sn.json
+│   │   │               4band_v3.json
+│   │   │               ensemble.json
+│   │   │               
+│   │   └───uvr5_weights
+│   │           .gitignore
+│   │           
+│   └───__pycache__
+│           assets.cpython-312.pyc
+│           my_utils.cpython-312.pyc
+│           __init__.cpython-312.pyc
+│           
+└───__pycache__
+        config.cpython-312.pyc
+        

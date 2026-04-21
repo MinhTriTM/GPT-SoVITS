@@ -1,4 +1,5 @@
 import os
+os.environ["PATH"] += os.pathsep + r"D:\Du_An_Mini\TTS_nano\training\models\GPT-SoVITS"
 
 inp_text = os.environ.get("inp_text")
 exp_name = os.environ.get("exp_name")
