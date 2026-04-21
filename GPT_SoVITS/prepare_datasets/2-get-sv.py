@@ -58,6 +58,9 @@ else:
 class SV:
     def __init__(self, device, is_half):
         pretrained_state = torch.load(sv_path, map_location="cpu")
+        # Pretrained file có thể lưu dạng wrapped {"weight": state_dict, "config": ..., "info": ...}
+        if "weight" in pretrained_state:
+            pretrained_state = pretrained_state["weight"]
         embedding_model = ERes2NetV2(baseWidth=24, scale=4, expansion=4)
         embedding_model.load_state_dict(pretrained_state)
         embedding_model.eval()
